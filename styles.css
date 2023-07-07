@@ -336,4 +336,13 @@ header{
         
     }
 }
+
+@media screen and (max-width: 640px) {
+    .slider{
+        height:300px;
+    }
+    .box{
+        max-height: 350px;
+    }
     
+}
