@@ -38,15 +38,15 @@ p{
 }
 a{
     text-decoration: none;
-    color: black;
+    
 }
 
 .container{
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
     overflow-x: hidden;
     background-color: #f1dfd1;
-background-image: linear-gradient(315deg, #f1dfd1 0%, #f6f0ea 74%);
+    background-image: linear-gradient(315deg, #f1dfd1 0%, #f6f0ea 74%);
     
 }
 
@@ -74,75 +74,58 @@ img:hover{
     box-shadow: 0 0 2px var(--secondary-text-color);
 
 }
+
 .logo{
-    height: 100px;
-    width: 200px;
+    height: 80px;
+    width: 150px;
 }
-.logo1{
-    height: 60px;
-    width: 100px;
-}
-.hover-underline-animation {
-    display: inline-block;
-    position: relative;
-    color: #0087ca;
-  }
-.hover-underline-animation::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #0087ca;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  }
-  .hover-underline-animation:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-
-
 li{
     list-style: none;
 }
 .titlebar{
     width: 100%;
-    height: 20px;
-    background-color: antiquewhite;
+    height: 12px;
+    
 }
 .main-nav{
     justify-content: space-between;
     margin-top: 10px;
     background-color: white;
-    box-shadow: 0 0 2px var(--secondary-text-color);
+    box-shadow: 0px 0px 10px  black;
     align-items: center;
+    padding: 0px 25px 0px 20px;
+    gap: 35px;
+    overflow: hidden;
    
 }
 .navlinks ul{
     justify-content: end;
-    gap: 40px;
-    
+    gap: 35px;
+    z-index: 1;
 }
-li{
-    
-    
+.navlinks ul li a{
+    color: black;
+    font-size: large;
+    font-weight: 530;
+    padding: 8px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+
 }
-.navlinks{
-    margin: 25px;
-}
-.jngec-Logo{
-    margin-left: 15px;
+.navlinks ul li a:hover{
+    background: #f6f0ea;
 }
 
-header{
-    padding: 50px var( --primary-inline-section) 0;
-}
+
+
+
+
+
+
 .slider {
+    margin-top: 5px;
     width: 100%;
-    height: 400px;
+    height: 550px;
     overflow: hidden;
     position: relative;
   }
@@ -331,15 +314,12 @@ header{
     .gallery{
         grid-template-columns: repeat(2,1fr);
     }
-    .navlinks{
-        display: none;
-        
-    }
+    
 }
 
 @media screen and (max-width: 640px) {
     .slider{
-        height:300px;
+        height:400px;
     }
     .box{
         max-height: 350px;
