@@ -286,22 +286,15 @@ li{
     cursor: pointer;
 }
 
-
-
-.ImageGallery{
-    margin-top: 100px;
-}
-.imgGallery{
-    text-align: center;
-    margin-top: 25px;
-}
-
-
 .footerele{
     justify-content: space-evenly;
 }
 .columnlinks li{
     padding: 5px;
+}
+.subfooter{
+    margin-top: 10px;
+    justify-content: space-evenly;
 }
 
 @media screen and (max-width: 1024px) {
@@ -322,7 +315,7 @@ li{
         height:400px;
     }
     .box{
-        max-height: 350px;
+        max-height: 300px;
     }
     
 }
